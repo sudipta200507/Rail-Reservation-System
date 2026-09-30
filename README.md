@@ -1,159 +1,91 @@
-# 🎫 Railway Ticket Reservation System
+# Railway Reservation System
 
-A modern and interactive Python-based railway ticket booking system with smart search, seat filters, digital tickets, and MySQL database support.
+A Python desktop application demonstrating a complete railway ticket-booking workflow with a graphical interface, MySQL persistence, seat management, fare calculation, and digital ticket generation.
 
----
+## Overview
 
-## 🚀 Features
+This project combines application development, database integration, UI design, and document generation into a single end-to-end system.
 
-### ✅ Modern UI
+## Features
 
-* Clean & responsive interface
-* Easy navigation and booking flow
+- Train search by source and destination
+- Class-based filtering
+- Fare calculation
+- Seat availability and booking
+- Unique PNR generation
+- Digital ticket generation
+- QR-code generation
+- PNG / PDF ticket export
+- Booking history
+- MySQL database integration
 
-### 🔍 Smart Train Search
+## Architecture
 
-* Search by **Source** and **Destination**
-* Auto-suggestions
-* Filters: **1A, 2A, 3A, 3E, SL**
-* Sort by fare, name, or time
+`text
+Tkinter UI
+    ↓
+Application Logic
+    ↓
+Booking / Seat Management
+    ↓
+MySQL Database
+    ↓
+Ticket + QR Generation
+`
 
-### 💺 Seat Booking System
+## Tech Stack
 
-* Live seat availability
-* Auto fare calculation
-* Generates unique **PNR**
+| Layer | Technology |
+|---|---|
+| Language | Python |
+| UI | Tkinter / CustomTkinter |
+| Database | MySQL |
+| QR | qrcode |
+| Images | Pillow |
+| Version Control | Git + GitHub |
 
-### 🎟 Digital Ticket
+## Project Structure
 
-* Automatic **QR Code generation**
-* Ticket preview
-* Save Ticket (PNG / PDF)
-
-### 🗄 Database Integration
-
-* MySQL backend
-* Saves all bookings
-* "My Bookings" page to view history
-
-### 🛠 Developer Friendly
-
-* Easy to modify
-* Clean folder structure
-
----
-
----
-
-## 🧰 Tech Stack
-
-| Part            | Technology             |
-| --------------- | ---------------------- |
-| Backend         | Python                 |
-| UI              | Tkinter / Custom       |
-| Database        | MySQL                  |
-| QR Code         | Python `qrcode` module |
-| Images          | Pillow (PIL)           |
-| Version Control | Git & GitHub           |
-
----
-
-## 📁 Folder Structure
-
-```
+`text
 Railway-Reservation-System/
-│
 ├── main.py
 ├── database/
 │   ├── connect.py
-│   ├── trains.sql
-│
+│   └── trains.sql
 ├── assets/
-│   ├── icons/
-│   ├── logo.png
-│
 ├── tickets/
-│   ├── ticket_XXXX.png
-│
 ├── utils/
 │   ├── qr_generator.py
-│   ├── pnr_generator.py
-│
+│   └── pnr_generator.py
 ├── requirements.txt
 └── README.md
-```
+`
 
----
+## Local Setup
 
-## ⚙️ Installation
-
-### 1️⃣ Clone Repo
-
-```
-git clone https://github.com/YOUR-USERNAME/YOUR-REPO.git
-cd YOUR-REPO
-```
-
----
-
-### 2️⃣ Install Modules
-
-```
+`bash
+git clone https://github.com/sudipta200507/Rail-Reservation-System.git
+cd Rail-Reservation-System
 pip install -r requirements.txt
-```
-
-If missing:
-
-```
-pip install qrcode mysql-connector-python pillow
-```
-
----
-
-### 3️⃣ Setup MySQL
-
-```
-CREATE DATABASE rail_reserve;
-USE rail_reserve;
-SOURCE trains.sql;
-```
-
-Edit DB config in:
-
-```
-database/connect.py
-```
-
----
-
-### 4️⃣ Run the App
-
-```
 python main.py
-```
+`
 
----
+## Engineering Concepts
 
-## 🧪 Future Improvements
+- CRUD-style database operations
+- Relational data modelling
+- Desktop GUI development
+- Input validation
+- Booking workflows
+- Unique identifier generation
+- File generation
+- Python package integration
 
-* User login system
-* Online payment integration
-* Live train status
-* Mobile responsive web version
-* Admin dashboard
+## Future Direction
 
----
+Authentication, payment integration, live train data, an admin dashboard, and a web/mobile frontend.
 
-## 🤝 Contributing
+## Author
 
-Feel free to open issues or pull requests.
-
----
-
----
-
-## ⭐ Support
-
-If you found this useful, please **star the repo ⭐**!
-
----
+**Sudipta Roy**  
+B.Tech CSE (AI & ML)
