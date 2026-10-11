@@ -21,7 +21,7 @@ This project combines application development, database integration, UI design, 
 
 ## Architecture
 
-`text
+```text
 Tkinter UI
     ↓
 Application Logic
@@ -31,7 +31,7 @@ Booking / Seat Management
 MySQL Database
     ↓
 Ticket + QR Generation
-`
+```
 
 ## Tech Stack
 
@@ -46,7 +46,7 @@ Ticket + QR Generation
 
 ## Project Structure
 
-`text
+```text
 Railway-Reservation-System/
 ├── main.py
 ├── database/
@@ -59,16 +59,16 @@ Railway-Reservation-System/
 │   └── pnr_generator.py
 ├── requirements.txt
 └── README.md
-`
+```
 
 ## Local Setup
 
-`bash
+```bash
 git clone https://github.com/sudipta200507/Rail-Reservation-System.git
 cd Rail-Reservation-System
 pip install -r requirements.txt
 python main.py
-`
+```
 
 ## Engineering Concepts
 
